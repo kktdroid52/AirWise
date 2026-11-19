@@ -1,0 +1,8 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+body { @apply bg-paper text-forest antialiased; font-family: Georgia, 'Iowan Old Style', serif; line-height: 1.6; }
+button, input, select, textarea { font-family: system-ui, sans-serif; }
+:focus-visible { outline: 3px solid #1F6F6B; outline-offset: 2px; }
+.btn { @apply min-h-[44px] px-4 rounded border border-forest bg-forest text-paper font-medium; }
+.btn-quiet { @apply min-h-[44px] px-3 rounded border border-slate2/40 bg-transparent text-forest; }
+.field { @apply min-h-[44px] px-3 rounded border border-slate2/50 bg-white w-full; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
