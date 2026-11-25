@@ -1,2 +1,3 @@
+const c = (name) => `rgb(var(--${name}) / <alpha-value>)`;
 export default { content: ['./index.html','./src/**/*.{ts,tsx}'],
- theme: { extend: { colors: { forest:'#1F3D36', teal:'#1F6F6B', paper:'#F6F4EF', slate2:'#46515A', amber2:'#B7791F', coral:'#C2412D' } } } };
+ theme: { extend: { colors: { paper: c('bg'), surface: c('surface'), forest: c('text'), slate2: c('muted'), teal: c('accent'), ink: c('ink'), amber2: c('amber'), coral: c('coral') } } } };
